@@ -3,18 +3,18 @@ package hibernate;
 public enum Gender {
 	M("Male"), F("FEMALE");
 
-	private String gender;
+	private String genderType;
 
 	private Gender(String gender) {
-		this.gender = gender;
+		this.genderType = gender;
 	}
 
 	public String getGender() {
-		return gender;
+		return genderType;
 	}
 
 	public void setGender(String gender) {
-		this.gender = gender;
+		this.genderType = gender;
 	}
 
 }
