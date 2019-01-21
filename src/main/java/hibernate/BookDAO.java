@@ -35,9 +35,9 @@ public class BookDAO {
 		TypedQuery<Book> query = em
 				.createQuery("select b " + "from Book b " + "inner join b.clients c " + "where c.id =:id ", Book.class);
 		query.setParameter("id", entity.getId());
-		List<Book> books = query.getResultList();
+		
 
-		return books;
+		return query.getResultList();
 
 	}
 
@@ -49,9 +49,8 @@ public class BookDAO {
 		TypedQuery<Book> query = em
 				.createQuery("select distinct b " + "from Book b " + "inner join b.clients c ", Book.class);
 		
-		List<Book> books = query.getResultList();
 
-		return books;
+		return query.getResultList();
 
 	}
 

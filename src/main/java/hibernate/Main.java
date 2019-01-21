@@ -1,6 +1,14 @@
 package hibernate;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+
 public class Main {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
+
 
 	public static void main(String[] args) {
 
@@ -31,7 +39,7 @@ public class Main {
 
 		LOGGER.trace(daob.listeBookAcheteParClient(client1).toString());
 		LOGGER.trace(daoc.listeClientAchete(book1).toString());
-		LOGGER.trace(daob.listeBooks());
+		
 
 	}
 }
