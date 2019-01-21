@@ -13,8 +13,6 @@ public enum Gender {
 		return genderType;
 	}
 
-	public void setGender(String gender) {
-		this.genderType = gender;
-	}
+
 
 }

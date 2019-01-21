@@ -36,9 +36,8 @@ public class Main {
 		daoc.create(client3);
 		
 		
+		
 
-		LOGGER.info(daob.listeBookAcheteParClient(client1).toString());
-		LOGGER.info(daoc.listeClientAchete(book1).toString());
 		
 
 	}
